@@ -10,7 +10,7 @@ def mac_to_bytes(mac_address : str):
 
 def get_mac_vendor(mac_string : str):
     oui = mac_string[:8].replace(':', '').upper()
-    with open('oui.csv', 'r') as csvfile:
+    with open('oui.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
             if oui == row[1]:
