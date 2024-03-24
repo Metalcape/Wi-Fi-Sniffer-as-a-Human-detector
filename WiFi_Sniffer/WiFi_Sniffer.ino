@@ -17,7 +17,7 @@
 
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
-// #include <credentials.h>
+#include "./credentials.h"
 #include <set>
 #include <string>
 #include "./functions.h"
